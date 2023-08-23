@@ -4,6 +4,8 @@
 
 ## 如何安裝
 
+Terminal 執行以下指令:
+
 ```console
 yarn
 ```
@@ -49,6 +51,8 @@ function sum(a, b) {
 ```
 
 - 進行測試:
+
+Terminal 執行以下指令:
 
 ```console
 yarn test
