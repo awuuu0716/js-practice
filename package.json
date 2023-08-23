@@ -1,0 +1,14 @@
+{
+  "name": "leet-code-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "awu <llinn927716@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
+    "jest": "^29.6.3"
+  }
+}
