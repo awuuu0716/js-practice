@@ -2,16 +2,16 @@
  * @description 這是一個會回傳兩個數字總和的函式
  *
  * @example
- * 返回 2
  * sum(1,1)
+ * 返回 2
  *
  * @example
- * 返回 5
  * sum(2,3)
+ * 返回 5
  *
  * @example
- * 返回 0.6
  * sum(0.2,0.4)
+ * 返回 0.6
  *
  * @param {number} numA - 第一個數字
  * @param {number} numB - 第二個數字
