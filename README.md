@@ -32,12 +32,12 @@ yarn
  * 返回 0.6
  * sum(0.2,0.4)
  *
- * @param {number} a - 第一個加數
- * @param {number} b - 第二個家數
+ * @param {number} numA - 第一個數字
+ * @param {number} numB - 第二個數字
  *
  * @return {number} 兩個數的和
  */
-function sum(a, b) {
+function sum(numA, numB) {
   // TODO: 完成這個 function
 }
 ```
@@ -81,3 +81,17 @@ Received: 0.6000000000000001
 但是卻得到了 0.6000000000000001。
 
 接下來就回去修改 function，想辦法通過測試吧!
+
+## 測試特定檔案 or 週數
+
+`yarn test` 預設會執行這裡所有的測試，想要測試特定檔案可以用以下指令:
+
+```console
+yarn test sum.test.js
+```
+
+也可以執行特定週(資料夾)
+
+```console
+yarn test week1
+```

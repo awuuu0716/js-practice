@@ -13,8 +13,8 @@
  * 返回 0.6
  * sum(0.2,0.4)
  *
- * @param {number} a - 第一個數字
- * @param {number} b - 第二個數字
+ * @param {number} numA - 第一個數字
+ * @param {number} numB - 第二個數字
  *
  * @return {number} 兩個數的和
  */
