@@ -19,8 +19,8 @@ yarn
 
 ## 注意事項
 
-1. 生成式聊天機器人如: chatgpt 禁止
-2. 第三方函式庫如: numbro, decimal 禁止
+1. 生成式聊天機器人如: ChatGPT 禁止
+2. 第三方函式庫如: numbro.js, decimal.js 禁止
 
 ## 如何使用
 
