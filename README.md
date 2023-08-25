@@ -17,6 +17,11 @@ npm install -g yarn
 yarn
 ```
 
+## 注意事項
+
+1. 生成式聊天機器人如: chatgpt 禁止
+2. 第三方函式庫如: numbro, decimal 禁止
+
 ## 如何使用
 
 - 完成 src/weekN/test 中未完成的 function, 例如 sum.js:
