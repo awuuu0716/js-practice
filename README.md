@@ -107,3 +107,33 @@ yarn test sum.test.js
 ```console
 yarn test week1
 ```
+
+或是特定目錄下的檔案
+
+```console
+yarn test week2/test/normal/tree.test.js
+```
+
+## "印出" 與 "返回" 的差異
+
+如果在題目中看見 "印出"，代表是使用 `console.log` 來呈現結果，例如 week2/normal/tree.js:
+
+```js
+例如 num 為 3，則印出：
+  *
+ ***
+*****
+  *
+  *
+  *
+```
+
+返回或回傳則是指 function 的 return 值，例如以下 function 返回數字 1:
+
+```js
+function getNumberOne() {
+  return 1;
+}
+```
+
+要通過測試必須返回正確的值。
