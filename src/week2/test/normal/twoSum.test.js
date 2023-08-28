@@ -1,4 +1,4 @@
-import testData from "../fixtures/twoSum.json";
+import testData from "../../fixtures/twoSum.json";
 import twoSum from "./twoSum";
 
 describe("測試 twoSum.js", () => {

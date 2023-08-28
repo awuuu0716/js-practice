@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tree output</title>
+    <script src="./tree.js" type="module"></script>
+  </head>
+  <body>
+    <input placeholder="請輸入樹的大小" id="input" type="number"></input>
+    <button id="submit">送出</button>
+    <div id="treeField" style="font-family: Consolas; margin-top: 20px;"></div>
+
+    <script type="module">
+        import tree from "./tree.js";
+
+        const treeField = document.getElementById("treeField")
+        const submitBtn = document.getElementById("submit")
+  
+        function drawTree(){
+            try {
+                const treeSize = Number(document.getElementById("input").value)
+                if(!treeSize) return;
+
+                const christmasTree = tree(treeSize).replaceAll(" ", "&nbsp;").replaceAll("\n","<br>");
+                
+                clearTree();
+                updateTree(christmasTree);
+            } catch (error) {
+                clearTree();
+                updateTree("Woops! 有什麼出錯了，請檢查 tree.js 裡的 function 是否正確");
+            }
+        }
+
+        function updateTree(text) {
+            treeField.innerHTML = text;
+        }
+
+        function clearTree() {
+            updateTree("");
+        }
+        
+        submitBtn.addEventListener("click", drawTree)
+        input.addEventListener("keydown", (e) => {
+            if(e.key === "Enter"){
+                drawTree()
+            }
+        })
+      </script>
+  </body>
+</html>
