@@ -40,8 +40,21 @@
 
 function tree(treeSize) {
   // draw your tree :)
-  // console.log("your result:", result);
-  // return result;
+  return Array.from(Array(treeSize))
+    .map((_, index) => {
+      const treeTop = `${" ".repeat(treeSize - 1 - index)}${"*".repeat(
+        getPositiveOdd(index + 1)
+      )}\n`;
+      return treeTop;
+    })
+    .concat(
+      Array.from(Array(treeSize)).map(() => {
+        const trunk = `${" ".repeat(treeSize - 1)}*\n`;
+        return trunk;
+      })
+    )
+    .join("");
 }
+const getPositiveOdd = (n) => Math.max(2 * n - 1, 1);
 
 export default tree;
