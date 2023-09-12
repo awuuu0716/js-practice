@@ -8,7 +8,7 @@ const { Worker } = require("worker_threads");
  * @param {number} num
  * @param {Options} options
  *
- * @returns {Promise<number>}
+ * @returns {Promise<number|string>}
  */
 const runFibonacciWorker = (num, options) => {
   return new Promise((resolve, reject) => {
